@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Christ's College &middot; MCR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>  
+    <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script> 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/crest.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/crest.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/crest.png">
+                    <link rel="apple-touch-icon-precomposed" href="img/crest.png">
+                                   <link rel="shortcut icon" href="img/crest.png">
+
+    <!-- ANALYTICS (Bigbrother's watching you ^-^) -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34397666-2', 'srcf.net');
+      ga('send', 'pageview');
+    </script>
+    
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <!--<div class="container">-->
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--<a class="brand" href="#">Christ's College MCR</a>-->
+      <a class="brand" href="index"> <img src="img/crest.png" height="20px" width="20px"> Christ's College MCR</a>
+
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index">Home</a></li>
+                <li><a href="committee">Committee</a></li>
+                <li><a href="events">Events</a></li>
+                <li><a href="welfare">Welfare</a></li>
+                <li class="dropdown">
+                  <a href="academic_programs" class="dropdown-toggle disbled">Academic Programs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="academic_programs#erss">ERSS</a></li>
+                    <li><a href="academic_programs#talks">Talks</a></li>
+                    <li><a href="academic_programs#teaching">Teaching</a></li>
+                    <li><a href="academic_programs#engagement">Engagement</a></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="societies">Societies</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+                <!--<li>
+                  <form class="navbar-search pull-right">
+                    <input type="text" class="search-query" placeholder="Search">
+                  </form>
+                </li>-->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      <!--</div>  /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/top_bar/Bar1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/top_bar/Bar2.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span12">
+          <h2>Societies</h2>
+          <p class="lead">From charity to rock climbing and everything in between, Christ's College is home to a large number of clubs and societies run by students. In addition to the range of clubs and societies in College, there are many sports teams and societies with members from around the University. More details can be found on the <a href="http://www.cusu.cam.ac.uk/societies/directory/">CUSU Societies Directory</a>. Often, but by no means always, college-level sports will be more relaxed and friendly, whereas university-level teams will require more dedication.</p>
+
+          <p class="lead">Below is a list of College societies for 2013-2014 with contact details. If you are involved in running a College club or society which is missing from this list, please email the liaison officer with your details to be added.</p>
+        </div><!-- /.span12 -->
+      </div><!-- /.row -->
+
+      <hr />
+
+      <div class="row">
+        <div class="span12">
+          <table class="table table-bordered table-striped table-hover" id="table1">
+            <thead>
+              <tr class="success">
+                <th>Sport/Society</th><th>Captain/President</th><th>CRSID</th><th>Co-Captain/President</th><th>CRSID</th><th>Info</th>
+              </tr>
+            </thead>
+            <tbody>
+               <tr><td>Amnesty</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Athletics</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Badminton- Mens</td><td>Mike Shaw</td><td>ms2032</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Badminton-Womens</td><td>Kate Wilson</td><td>kw362</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Basketball</td><td>Daniel Berg</td><td>db588</td><td>&nbsp;</td><td>&nbsp;</td><td><a class="popup" rel="popover" data-content="Christ's Basketball Club was established a few years ago, and has since evolved into a joint team with the MRC Laboratory of Molecular Biology. The team plays in the college league, with players of a wide range of ability, so regardless of if you are completely new to the sport or a current NBA player, we would love to have you playing with us! Typically we run one training session a week at Kelsey Kerridge for Michaelmas and Lent terms, as well as having 8-10 matches in the same time frame. To be added to the mailing list or for more details, contact Dan or Steve." data-original-title="Basketball">Info</a></td></tr>
+               <tr><td>Beauforts</td><td>Joe Jarret</td><td>jj340</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Boat Club</td><td>John Beckett</td><td>jb797</td><td>Rebecca Masters</td><td>rhm39</td><td></td></tr>
+               <tr><td>CADS</td><td>Milena Messner</td><td>mm950</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>CCMS</td><td>Charlotte Lapham</td><td>cvl23</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Chess</td><td>Vytautas Gruslys</td><td>vg260</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Christian Union</td><td>Stephen Lovelock</td><td>sl612</td><td>Rebecca Coombs</td><td>rc564</td><td></td></tr>
+               <tr><td>Christ's Voices</td><td>Helen Simpkiss?</td><td>mhs38</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Classics Society</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>COGLES (Geography)</td><td>Ciara Dundon</td><td>cd445</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>College Colours</td><td>Alex Platts</td><td>atp33</td><td>Miranda Pottinger</td><td>mjp83</td><td></td></tr>
+               <tr><td>Cricket</td><td>Alex Platts</td><td>atp33</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Cricket- 2nd XI</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Croquet</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Darwin Society (Science)</td><td>Raghd Rostom</td><td>rr415</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Debating Soc</td><td>Zara Reid</td><td>zr229</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Evensong</td><td>Revd. Bernard Randall (Chaplain) </td><td>bcr26</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Fairtrade</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>FilmSoc</td><td>Diarmuid Maguire</td><td>dlm40</td><td>&nbsp;</td><td>&nbsp;</td><td><a class="popup" rel="popover" data-content="The society screens cinema-quality 35mm films up to twice a week during Michaelmas and Lent terms. With a recently renovated theatre, including a Dolby surround-sound system, we offer the best film experience of any college in Cambridge, at student-friendly prices. Getting involved as a committee member provides the opportunity not only to help run the society, whether Front of House or behind the projector, but also to see our films for free." data-original-title="Christ's Films">Info</a></td></tr>
+               <tr><td>Football- Men's 1st XI</td><td>Jordan Cracknell</td><td>jc724</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Football- Womens</td><td>Molly Avery</td><td>ma539</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Football-Men's 2nd XI</td><td>Kane Evans</td><td>kae31</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Hockey-Men's</td><td>Alex Clark</td><td>ac720</td><td>&nbsp;</td><td>&nbsp;</td><td><a class="popup" rel="popover" data-content="The hockey club is open to all members of college, regardless of ability, experience or year. We are an extremely active club, regular training and matches as well as a healthy dose of socials mean that the CCHC is an excellent club to be part of. We also have the nicest stash of any society. If you're interested in joining, or just trying hockey out, send us an email: th384." data-original-title="Hockey">Info</a></td></tr>
+               <tr><td>Hockey- Womens'</td><td>Claire Mitchell </td><td>crm62</td><td>Zara Reid</td><td>zr229</td><td><a class="popup" rel="popover" data-content="The hockey club is open to all members of college, regardless of ability, experience or year. We are an extremely active club, regular training and matches as well as a healthy dose of socials mean that the CCHC is an excellent club to be part of. We also have the nicest stash of any society. If you're interested in joining, or just trying hockey out, send us an email: zr229 or crm62." data-original-title="Hockey">Info</a></td></tr>
+               <tr><td>JAMSOC</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>JCR</td><td>Charlotte Higgins</td><td>ch571</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Lacrosse [Mixed]</td><td>Alia Ardon</td><td>akla2</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Lady Margeret Society</td><td>Lizzie Ribey</td><td>ejr59</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Law Society</td><td>Reuben Vandercryussen?</td><td>rv265</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>May Ball Committee</td><td>Adam Beasy</td><td>ajb286</td><td>Andy Whitaker</td><td>aw566</td><td></td></tr>
+               <tr><td>MedSoc</td><td>Lizzie Ribey</td><td>ejr59</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Milton Society</td><td>Kane Evans</td><td>kae31</td><td>Ellie Russell</td><td>er363</td><td></td></tr>
+               <tr><td>Netball [Mixed]</td><td>Morgan Lowther</td><td>ml638</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Netball-Womens</td><td>Chrissy Goodall</td><td>cg512</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Politics</td><td>Charles Read</td><td>cpr34</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Pool</td><td>Elliott Andrews</td><td>ea354</td><td>&nbsp;</td><td>&nbsp;</td><td><a class="popup" rel="popover" data-content="The Christ's College Pool Society has a range of activities, from the intercollegiate league and cup for the more experienced players out there, to the termly in-college tournament. We're a social and inclusive society which anyone can join, whether they have played before or not. At high levels, it is competitive but with a relatively low commitment pressure. There's also the benefit of most of the venues being in bars and pubs! If you're interested, come sign up at the Christ's College Freshers' fair or email me (ea354)." data-original-title="Pool">Info</a></td></tr>
+               <tr><td>RAG</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Rock Climbing</td><td>Elliott Andrews</td><td>ea354</td><td>&nbsp;</td><td>&nbsp;</td><td><a class="popup" rel="popover" data-content="A relatively new society, the climbing club provides a nice relaxed atmosphere to try out climbing for the first time, or meet others who already enjoy it. We all climb at Kelsey Kerridge in an informal and mixed ability setting, which has a good range from the very beginner to the more competent. Feel free to contact me (ea354) if you want to get started climbing with college." data-original-title="Rock Climbing">Info</a></td></tr>
+               <tr><td>Rugby</td><td>Pete Howarth</td><td>mb801</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Running Club</td><td>Oli Maskell</td><td>om261</td><td>Megan Wilson</td><td>mew45</td><td></td></tr>
+               <tr><td>Seeley Society (History)</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Squash</td><td>Ned Bartholomew</td><td>nb437</td><td>Sophie Barker</td><td>scb71</td><td></td></tr>
+               <tr><td>Swimming</td><td>Anne Claire Morel</td><td>acm97</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Table Tennis</td><td>Sanjeevan Ahilan</td><td>spra2</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Tennis- Men's</td><td>Ben Devos</td><td>bad26</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Tennis- Womens'</td><td>Julia Wdowin</td><td>jw735</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>The Hippolytans</td><td>Miranda Pottinger</td><td>mjp83</td><td>&nbsp;</td><td>&nbsp;</td><td><a class="popup" rel="popover" data-content="The Hippolytans is the Christ's Women's Sporting Society, uniting and supporting the best sportswomen throughout college. It aims to promote and encourage female sport within college by admitting only women who play at least two sports at Cuppers level or university sport. However this is not just a sporting society; this is a group of talented young sportswomen who also like to engage in a spot of wining and dining with Cambridge's finest male talent. The society organises termly dinners, along with other events throughout the year." data-original-title="The Hippolytans">Info</a></td></tr>
+               <tr><td>The Marguerites</td><td>Ned Bartholomew</td><td>nb437</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Ultimate Frisbee</td><td>Baran Acar</td><td>nb437</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Varsity Ski Trip</td><td>Rob Fitzgerald-Crisp</td><td>rf345</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Visual Arts</td><td>Anne Claire Morel?</td><td>acm97</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+               <tr><td>Waterpolo [Mixed]</td><td>Adam Kuo</td><td>ak701</td><td>&nbsp;</td><td></td><td></td></tr>
+             </tbody>
+          </table>
+        </div>
+      </div>
+
+      <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $('#table1').dataTable({
+          "bPaginate": false,
+        });
+      } );
+    </script>
+    <script>  
+      $(function ()  
+      { $(".popup").popover({
+        placement : 'left'
+      });  
+      });  
+    </script> 
+
+      <!-- FOOTER -->
+      <br />
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Christ's College MCR</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel({
+          	interval: 10000
+          })
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder.js"></script>
+
+  </body>
+</html>

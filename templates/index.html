@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Christ's College &middot; MCR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/crest.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/crest.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/crest.png">
+                    <link rel="apple-touch-icon-precomposed" href="img/crest.png">
+                                   <link rel="shortcut icon" href="img/crest.png">
+
+    <!-- ANALYTICS (Bigbrother's watching you ^-^) -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34397666-2', 'srcf.net');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <!--<div class="container">-->
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--<a class="brand" href="#">Christ's College MCR</a>-->
+	           <a class="brand" href="index"> <img src="img/crest.png" height="20px" width="20px"> Christ's College MCR</a>
+
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="committee">Committee</a></li>
+                <li><a href="events">Events</a></li>
+                <li><a href="welfare">Welfare</a></li>
+                <li class="dropdown">
+                  <a href="academic_programs" class="dropdown-toggle disbled">Academic Programs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="academic_programs#erss">ERSS</a></li>
+                    <li><a href="academic_programs#talks">Talks</a></li>
+                    <li><a href="academic_programs#teaching">Teaching</a></li>
+                    <li><a href="academic_programs#engagement">Engagement</a></li>
+                  </ul>
+                </li>
+                <li><a href="societies">Societies</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+                <!--<li>
+                  <form class="navbar-search pull-right">
+                    <input type="text" class="search-query" placeholder="Search">
+                  </form>
+                </li>-->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      <!--</div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/top_bar/Bar1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/top_bar/Bar2.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+ 
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span2">
+          <h2>Links</h2>
+        	  <p><a class="btn btn-large btn-primary btn-inverse btn-block" type="button" href="http://www.christs.cam.ac.uk">Christ's College</a></p>
+        	  <p><a class="btn btn-large btn-primary btn-inverse btn-block" type="button" href="http://thejcr.co.uk">Christ's JCR</a></p>
+        	  <p><a class="btn btn-large btn-primary btn-inverse btn-block" type="button" href="https://www.facebook.com/groups/104200236360943/">MCR Facebook</a></p>
+        	  <p><a class="btn btn-large btn-primary btn-inverse btn-block" type="button" href="http://www.christs.cam.ac.uk/intranet/mealbooking//">Meal Booking</a></p>
+        	  <p><a class="btn btn-large btn-primary btn-inverse btn-block" type="button" href="http://www.cusu.cam.ac.uk/advice/">CUSU Advice</a></p>
+			  <p><a class="btn btn-large btn-primary btn-inverse btn-block" type="button" href="http://www.christsmcr.co.uk/docs/MCR_Constitution_6_March_2012.pdf">Constitution</a></p>
+        </div><!-- /.span4 -->
+
+        <div class="span8">
+          <h2>News</h2>
+          {% for post in blog_posts %}
+            <div class="well">
+              <h3>{{post['title']}}</h3>
+              <p>{{post['text']}}</p>
+              <h6>By: The {{post['author']}}</h6>
+              <h6>At: {{post['date']}}</h6>
+            </div>
+          {% endfor %}
+
+        </div><!-- /.span4 -->
+
+        <div class="span2">
+          <h2>Events</h2>
+          <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+          <script type="text/javascript">
+            <!--
+            /* Loads the Google data JavaScript client library */
+            google.load("gdata", "2.x");
+
+            function init() {
+              // init the Google data JS client library with an error handler
+              google.gdata.client.init(handleGDError);
+            }
+
+            /**
+             * Adds a leading zero to a single-digit number.  Used for displaying dates.
+             */
+            function padNumber(num) {
+              if (num <= 9) {
+                return "0" + num;
+              }
+              return num;
+            }
+
+            /**
+             * Uses Google data JS client library to retrieve a calendar feed from the specified
+             * URL.  The feed is controlled by several query parameters and a callback 
+             * function is called to process the feed results.
+             *
+             * @param {string} calendarUrl is the URL for a public calendar feed
+             */  
+            function loadCalendar(calendarUrl) {
+              var service = new 
+                  google.gdata.calendar.CalendarService('christsmcr');
+              var query = new google.gdata.calendar.CalendarEventQuery(calendarUrl);
+              query.setOrderBy('starttime');
+              query.setSortOrder('ascending');
+              query.setFutureEvents(true);
+              query.setSingleEvents(true);
+              query.setMaxResults(10);
+
+              service.getEventsFeed(query, listEvents, handleGDError);
+            }
+
+            /**
+             * Callback function for the Google data JS client library to call when an error
+             * occurs during the retrieval of the feed.  Details available depend partly
+             * on the web browser, but this shows a few basic examples. In the case of
+             * a privileged environment using ClientLogin authentication, there may also
+             * be an e.type attribute in some cases.
+             *
+             * @param {Error} e is an instance of an Error 
+             */
+            function handleGDError(e) {
+              document.getElementById('jsSourceFinal').setAttribute('style', 
+                  'display:none');
+              if (e instanceof Error) {
+                /* alert with the error line number, file and message */
+                alert('Error at line ' + e.lineNumber +
+                      ' in ' + e.fileName + '\n' +
+                      'Message: ' + e.message);
+                /* if available, output HTTP error code and status text */
+                if (e.cause) {
+                  var status = e.cause.status;
+                  var statusText = e.cause.statusText;
+                  alert('Root cause: HTTP error ' + status + ' with status text of: ' + 
+                        statusText);
+                }
+              } else {
+                alert(e.toString());
+              }
+            }
+
+            /**
+             * Callback function for the Google data JS client library to call with a feed 
+             * of events retrieved.
+             *
+             * Creates an unordered list of events in a human-readable form.  This list of
+             * events is added into a div called 'events'.  The title for the calendar is
+             * placed in a div called 'calendarTitle'
+             *
+             * @param {json} feedRoot is the root of the feed, containing all entries 
+             */ 
+            function listEvents(feedRoot) {
+              var entries = feedRoot.feed.getEntries();
+              var eventDiv = document.getElementById('events');
+              if (eventDiv.childNodes.length > 0) {
+                eventDiv.removeChild(eventDiv.childNodes[0]);
+              }   
+              /* create a new unordered list */
+              var ul = document.createElement('ul');
+              /* set the calendarTitle div with the name of the calendar */
+              /*document.getElementById('calendarTitle').innerHTML = 
+                "Calendar: " + feedRoot.feed.title.$t;*/
+              /* loop through each event in the feed */
+              var len = entries.length;
+              for (var i = 0; i < len; i++) {
+                var entry = entries[i];
+                var title = entry.getTitle().getText();
+                var startDateTime = null;
+                var startJSDate = null;
+                var times = entry.getTimes();
+                if (times.length > 0) {
+                  startDateTime = times[0].getStartTime();
+                  startJSDate = startDateTime.getDate();
+                }
+                var entryLinkHref = null;
+                if (entry.getHtmlLink() != null) {
+                  entryLinkHref = entry.getHtmlLink().getHref();
+                }
+                var dateString = (startJSDate.getMonth() + 1) + "/" + startJSDate.getDate();
+                if (!startDateTime.isDateOnly()) {
+                  dateString += " " + startJSDate.getHours() + ":" + 
+                      padNumber(startJSDate.getMinutes());
+                }
+                var li = document.createElement('li');
+
+                /* if we have a link to the event, create an 'a' element */
+                /*if (entryLinkHref != null) {
+                  entryLink = document.createElement('a');
+                  entryLink.setAttribute('href', entryLinkHref);
+                  entryLink.appendChild(document.createTextNode(title));
+                  li.appendChild(entryLink);
+                  li.appendChild(document.createTextNode(' - ' + dateString));
+                } else {*/
+                  entryLink = document.createElement('a');
+                  entryLink.setAttribute('href', "events");
+                  entryLink.appendChild(document.createTextNode(title));
+                  li.appendChild(entryLink);
+                  li.appendChild(document.createTextNode(' - ' + dateString));
+                  //li.appendChild(document.createTextNode(title + ' - ' + dateString));
+                /*}*/
+
+                /* append the list item onto the unordered list */
+                ul.appendChild(li);
+              }
+              eventDiv.appendChild(ul);
+              if (len < 1){
+                var paragraph = document.createElement('p');
+                paragraph.textContent = 'Check back later for more events...';
+                eventDiv.appendChild(paragraph);
+              }
+
+            }
+            google.setOnLoadCallback(init);
+            //-->
+          </script>
+          <div id="events"></div>
+            
+          <script type="text/javascript">
+            loadCalendar('https://www.google.com/calendar/feeds/christs.mcr@gmail.com/public/full');
+          </script>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+      <!-- FOOTER -->
+      <br />
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a> &middot; <a href="blog/admin">Login</a></p>
+        <p>&copy; 2013 Christ's College MCR</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel({
+          	interval: 10000
+          })
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder.js"></script>
+  </body>
+</html>
